@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background: #007A8D;
+    font-family: Arial, sans-serif;
+}
+.titulo {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 570px;
+}
+
+.seta_voltar {
+    background: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.titulo_central {
+    background: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 29px;
+}
+
+
+.cards-hoteis {
+    margin-top: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+
+.card-hotel {
+    background: white;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform .15s;
+}
+
+.hotel-card:hover {
+    transform: scale(1.02);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #222;
+}
+
+.avaliaçao {
+    font-size: 14px;
+    color: #1e8e3e;
+    margin: 3px 0;
+}
+
+.preço {
+    font-size: 15px;
+    margin: 5px 0 0;
+}
+
+.beneficios {
+    font-size: 13px;
+    color: #555;
+    margin: 4px 0 8px;
+}
+
+.botao_oferta {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0095FF;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
