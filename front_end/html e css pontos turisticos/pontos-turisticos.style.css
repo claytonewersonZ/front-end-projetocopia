@@ -52,11 +52,11 @@ body {
     transition: transform .15s;
 }
 
-.hotel-card:hover {
+.pontos-turisticos-card:hover {
     transform: scale(1.02);
 }
 
-.hotel-img {
+.pontos-turisticos-img {
     width: 100%;
     height: 150px;
     object-fit: cover;
