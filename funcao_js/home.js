@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-/* ========= 1. Filtros (Bares, Hotéis...) ========= */
-
 function inicializarFiltros() {
     const botoes = document.querySelectorAll(".botao-filtro");
 
@@ -53,9 +50,6 @@ function filtrarPorCategoria(categoria) {
 }
 
 
-
-/* ========= 2. Busca na barra ========= */
-
 function inicializarBusca() {
     const barra = document.querySelector(".barra-busca input[type='text']");
     const botao = document.querySelector(".buscar");
@@ -93,9 +87,6 @@ function buscarDestino(termo) {
 }
 
 
-
-/* ========= 3. Autocomplete (Sugestões) ========= */
-
 function carregarSugestoesPesquisa() {
     const input = document.querySelector(".barra-busca input[type='text']");
     const container = document.createElement("div");
@@ -129,8 +120,6 @@ function carregarSugestoesPesquisa() {
 
 
 
-/* ========= 4. Histórico de pesquisa (localStorage) ========= */
-
 function salvarHistoricoPesquisa(valor) {
     if (!valor.trim()) return;
 
@@ -142,9 +131,6 @@ function salvarHistoricoPesquisa(valor) {
     }
 }
 
-
-
-/* ========= 5. Ações dos cards ========= */
 
 function inicializarCards() {
     const botoes = document.querySelectorAll(".botao");
@@ -162,9 +148,6 @@ function abrirDetalhes(nome) {
     // window.location.href = `detalhes.html?item=${encodeURIComponent(nome)}`;
 }
 
-
-
-/* ========= 6. Efeitos e utilidades ========= */
 
 function animarCard(card) {
     card.style.opacity = 0;
@@ -189,9 +172,6 @@ function mostrarMensagemNenhumResultado(encontrou) {
 }
 
 
-
-/* ========= 7. Scroll suave para seções ========= */
-
 function inicializarScrollSuave() {
     document.querySelectorAll("nav button").forEach(btn => {
         btn.addEventListener("click", () => {
@@ -203,9 +183,6 @@ function inicializarScrollSuave() {
     });
 }
 
-
-
-/* ========= 8. Contador de ofertas ========= */
 
 function mostrarTotalOfertas() {
     const total = document.querySelectorAll(".card").length;
